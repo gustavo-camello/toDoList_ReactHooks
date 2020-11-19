@@ -10,7 +10,7 @@ import Grid from "@material-ui/core/Grid";
 function TodoApp () {
     const initialTodos = [
         {id: 1, task: "Take the bin out", completed: false},
-        {id: 2, task: "Wash car", completed: false},
+        {id: 2, task: "Wash car", completed: true},
         {id: 3, task: "Grow beard", completed: false},
     ]
     const [todos, setTodos] = useState(initialTodos);
