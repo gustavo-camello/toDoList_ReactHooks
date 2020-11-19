@@ -13,10 +13,8 @@ function TodoList ({todos, removeTodo, toggleTodo, editTodo}) {
                     {todos.map((todo, i) => (
                         <>
                             <Todo 
-                                task={todo.task}
-                                id={todo.id}
+                                {...todo}
                                 key={todo.id}
-                                completed={todo.completed}
                                 removeTodo={removeTodo}
                                 toggleTodo={toggleTodo}
                                 editTodo={editTodo}
